@@ -2,11 +2,10 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "chevron.left")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, Laura")
+        NavigationStack {
+            VStack {
+                Page1()
+            }
         }
     }
 }
