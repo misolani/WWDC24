@@ -8,17 +8,25 @@
 import SwiftUI
 
 struct MainView: View {
+    
+    @State var model = Model()
+    @State var index = 0
+    
     var body: some View {
+        
         NavigationStack{
-            
-            NavigationLink{
                 
-                PageModel()
+            PageModel(textOnScreen: $model.texts[index], colorOnScreen:  $model.colors[index], textColorOnScreen: $model.txtColor[index])
+                
+            Button{
+                
+                index = index + 1
                 
             } label : {
                 
                 Text("next")
-            }
+                   
+           }
         }
     }
 }

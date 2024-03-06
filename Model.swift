@@ -28,23 +28,28 @@ struct Model: Identifiable, Codable, Hashable{
                  "That’s it. As you can see, the languages we speak are not simply a form of communication, but they directly affect the way we see the world.",
             ]
     
-    var colors = ["blue",
+    var colors = ["purple 1",
                   "purple",
                   "blue",
                   "purple",
                   "blue",
-                  "purple","blue",
-                  "purple","blue",
-                  "purple","blue",
-                  "purple","blue",
-                  "purple","blue",
+                  "purple",
+                  "purple",
+                  "purple",
+                  "purple",
+                  "purple",
                   "purple"]
     
-    var txtColor: [String: String] =
-    [ "blue" : "white",
-      "purple" : "black",
-      "yellow" : "white",
-      "pink": "black"]
+    var txtColor = ["white",
+                    "black",
+                    "white",
+                    "black", 
+                    "white",
+                    "black", 
+                    "white",
+                    "black", 
+                    "white",
+                    "black"]
     
    
     

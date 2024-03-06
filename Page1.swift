@@ -25,21 +25,20 @@ struct Page1: View {
             
             
             
-            NavigationLink{
-                Page2()
-                
-            } label: {
-                Text("next")
-                    .foregroundStyle(.white)
-                    .padding()
-                    .background(.black)
-                    .cornerRadius(16)
-            }.padding(.bottom)
+//            NavigationLink{
+//                Page2()
+//                
+//            } label: {
+//                Text("next")
+//                    .foregroundStyle(.white)
+//                    .padding()
+//                    .background(.black)
+//                    .cornerRadius(16)
+//            }.padding(.bottom)
             
             Spacer()
             
-        }.frame(maxWidth: .infinity)
-            .background(Color(backgroundColor))
+        }
             
             
     }
