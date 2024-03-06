@@ -19,11 +19,11 @@ struct Page10: View {
         
         VStack{
             
-            TypeWriterView(finalText: text)
-                .foregroundColor(.black)
-                .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
-                .frame(maxWidth: 500)
-                .padding(.top, 50)
+//            TypeWriterView(finalText: text)
+//                .foregroundColor(.black)
+//                .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
+//                .frame(maxWidth: 500)
+//                .padding(.top, 50)
             
             Spacer()
             

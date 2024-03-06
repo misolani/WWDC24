@@ -10,7 +10,7 @@ import SwiftUI
 struct TypeWriterView: View {
     
     @State var text: String = ""
-    @State var finalText: String = "oieeee"
+    @Binding var finalText: String
     
     var body: some View {
         
@@ -19,9 +19,6 @@ struct TypeWriterView: View {
             Text(text)
                 .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
             
-            //Button("Type") {
-                
-            //}
         }.onAppear( perform: {
             typeWriter()
         })
@@ -44,7 +41,7 @@ struct TypeWriterView: View {
 
 struct TypeWriterView_Previews: PreviewProvider {
     static var previews: some View {
-        TypeWriterView()
+        TypeWriterView(finalText: .constant("oieeeee"))
     }
 }
 
@@ -55,5 +52,5 @@ extension String {
 }
 
 #Preview {
-    TypeWriterView(finalText: "Hello World")
+    TypeWriterView(finalText: .constant("oieeeeee"))
 }

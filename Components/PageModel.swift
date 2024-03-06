@@ -17,15 +17,20 @@ struct PageModel: View {
         
         VStack{
             
-            TypeWriterView(finalText: textOnScreen)
+            //TypeWriterView(finalText: $textOnScreen)
+            
+            Text(textOnScreen)
                 .foregroundColor(Color(textColorOnScreen))
                 .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
                 .frame(maxWidth: 500)
                 .padding(.top, 50)
             
+            Spacer()
+            
         }.frame(maxWidth: .infinity)
             .background(Color(colorOnScreen))
             .ignoresSafeArea()
+        
     }
 }
 

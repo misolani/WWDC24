@@ -14,19 +14,18 @@ struct MainView: View {
     
     var body: some View {
         
-        NavigationStack{
-                
-            PageModel(textOnScreen: $model.texts[index], colorOnScreen:  $model.colors[index], textColorOnScreen: $model.txtColor[index])
-                
-            Button{
-                
-                index = index + 1
-                
-            } label : {
-                
-                Text("next")
-                   
-           }
+        PageModel(textOnScreen: $model.texts[index],
+                  colorOnScreen:  $model.colors[index],
+                  textColorOnScreen: $model.txtColor[index])
+        
+        Button{
+            
+            index = index + 1
+            
+        } label : {
+            
+            Text("next")
+            
         }
     }
 }

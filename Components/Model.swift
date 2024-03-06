@@ -10,7 +10,11 @@ import SwiftUI
 struct Model: Identifiable, Codable, Hashable{
     
     var id = UUID()
-    var texts = [
+    
+    var texts = ["Hello there! My name is b, the brush! And I am hereto tell you the story of the color blue.",
+                 
+                 "Many years ago, a intellectual called Willian Gladstone read the Odyssey - book written by Homer in Ancient Greece.",
+                 
                  "The other colors are described initially as one of the first three and usually appear proportionately as we find them in nature.",
                  
                  "But why was blue always the last one if it’s present in so many places right?  Not actually!",
@@ -28,11 +32,11 @@ struct Model: Identifiable, Codable, Hashable{
                  "That’s it. As you can see, the languages we speak are not simply a form of communication, but they directly affect the way we see the world.",
             ]
     
-    var colors = ["purple 1",
-                  "purple",
-                  "blue",
-                  "purple",
-                  "blue",
+    var colors = ["white",
+                  "white",
+                  "yellow",
+                  "yellow",
+                  "red",
                   "purple",
                   "purple",
                   "purple",
@@ -40,12 +44,12 @@ struct Model: Identifiable, Codable, Hashable{
                   "purple",
                   "purple"]
     
-    var txtColor = ["white",
+    var txtColor = ["black",
+                    "black",
+                    "black",
                     "black",
                     "white",
-                    "black", 
-                    "white",
-                    "black", 
+                    "black",
                     "white",
                     "black", 
                     "white",
