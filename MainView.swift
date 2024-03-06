@@ -16,16 +16,17 @@ struct MainView: View {
         
         PageModel(textOnScreen: $model.texts[index],
                   colorOnScreen:  $model.colors[index],
-                  textColorOnScreen: $model.txtColor[index])
+                  textColorOnScreen: $model.txtColor[index],
+                  image: $model.images[index])
         
-        Button{
-            
-            index = index + 1
-            
-        } label : {
-            
-            Text("next")
-            
+//        Button{
+//        } label : {
+//            Text("next")
+//        }
+        .onTapGesture{
+            if index < model.texts.count - 1 {
+                index = index + 1
+            }
         }
     }
 }

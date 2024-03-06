@@ -11,7 +11,7 @@ struct Model: Identifiable, Codable, Hashable{
     
     var id = UUID()
     
-    var texts = ["Hello there! My name is b, the brush! And I am hereto tell you the story of the color blue.",
+    var texts = ["the story of the color blue",
                  
                  "Many years ago, a intellectual called Willian Gladstone read the Odyssey - book written by Homer in Ancient Greece.",
                  
@@ -30,7 +30,18 @@ struct Model: Identifiable, Codable, Hashable{
                  "As it happens, our brain is much more faster in identifying and understanding things when we have different names to them. So homer, did actually see the blue color of the ocean, but he could not tell it apart from the color of the wine!",
                  
                  "That’s it. As you can see, the languages we speak are not simply a form of communication, but they directly affect the way we see the world.",
-            ]
+    ]
+    
+    var images = ["Page1",
+                  "Page2",
+                  "Page3",
+                  "Page4",
+                  "Page5",
+                  "Page6",
+                  "Page7",
+                  "Page8",
+                  "Page9",
+                  "Page10"]
     
     var colors = ["white",
                   "white",
@@ -38,23 +49,27 @@ struct Model: Identifiable, Codable, Hashable{
                   "yellow",
                   "red",
                   "purple",
-                  "purple",
-                  "purple",
-                  "purple",
-                  "purple",
-                  "purple"]
+                  "beige",
+                  "white",
+                  "black",
+                  "black",
+                  "white",
+                  "blue",
+                  "black",
+                  "green",
+                  "white",
+                  "orange"]
     
     var txtColor = ["black",
                     "black",
                     "black",
                     "black",
                     "white",
-                    "black",
                     "white",
-                    "black", 
+                    "black",
+                    "black",
                     "white",
                     "black"]
     
-   
-    
 }
+

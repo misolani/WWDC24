@@ -12,6 +12,7 @@ struct PageModel: View {
     @Binding var textOnScreen: String
     @Binding var colorOnScreen: String
     @Binding var textColorOnScreen: String
+    @Binding var image: String
     
     var body: some View {
         
@@ -27,6 +28,8 @@ struct PageModel: View {
             
             Spacer()
             
+            Image(image)
+            
         }.frame(maxWidth: .infinity)
             .background(Color(colorOnScreen))
             .ignoresSafeArea()
@@ -35,5 +38,5 @@ struct PageModel: View {
 }
 
 #Preview {
-    PageModel(textOnScreen: .constant(""), colorOnScreen: .constant(""), textColorOnScreen: .constant(""))
+    PageModel(textOnScreen: .constant(""), colorOnScreen: .constant(""), textColorOnScreen: .constant(""), image: .constant("Page2"))
 }
