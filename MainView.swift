@@ -19,10 +19,6 @@ struct MainView: View {
                   textColorOnScreen: $model.txtColor[index],
                   image: $model.images[index])
         
-//        Button{
-//        } label : {
-//            Text("next")
-//        }
         .onTapGesture{
             if index < model.texts.count - 1 {
                 index = index + 1

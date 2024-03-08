@@ -15,6 +15,16 @@ struct Model: Identifiable, Codable, Hashable{
                  
                  "Many years ago, a intellectual called Willian Gladstone read the Odyssey - book written by Homer in Ancient Greece.",
                  
+                 "While he was reading, something caught his attention… the author described sea as “as dark as … ",
+                 
+                 " … wine?????” What???",
+                 
+                 "Thats right! After studying ancient books from china, India, and arabia, he realized that there wasn’t mention of the color blue at all, often describing blue things as black, purple and mostly green.",
+                 
+                 "But why is that? First we have to understand how the colors appears in a language. Usually, the first colors to be named are white and black, which are related to day and night.",
+                 
+                 "The next color to be named is red, since is commonly found in flowers, poisonous fruits and animals, blood, and its the easiest pigment to find in nature.",
+                 
                  "The other colors are described initially as one of the first three and usually appear proportionately as we find them in nature.",
                  
                  "But why was blue always the last one if it’s present in so many places right?  Not actually!",
@@ -29,8 +39,7 @@ struct Model: Identifiable, Codable, Hashable{
                  
                  "As it happens, our brain is much more faster in identifying and understanding things when we have different names to them. So homer, did actually see the blue color of the ocean, but he could not tell it apart from the color of the wine!",
                  
-                 "That’s it. As you can see, the languages we speak are not simply a form of communication, but they directly affect the way we see the world.",
-    ]
+                 "That’s it. As you can see, the languages we speak are not simply a form of communication, but they directly affect the way we see the world."]
     
     var images = ["Page1",
                   "Page2",
@@ -41,7 +50,13 @@ struct Model: Identifiable, Codable, Hashable{
                   "Page7",
                   "Page8",
                   "Page9",
-                  "Page10"]
+                  "Page10",
+                  "Page11",
+                  "Page12",
+                  "Page13",
+                  "Page14",
+                  "Page15"
+                  ]
     
     var colors = ["white",
                   "white",
@@ -52,14 +67,13 @@ struct Model: Identifiable, Codable, Hashable{
                   "beige",
                   "white",
                   "black",
-                  "black",
                   "white",
                   "blue",
-                  "black",
-                  "green",
+                  "blue",
+                  "blue",
                   "white",
-                  "orange"]
-    
+                  "blue"
+                  ]
     var txtColor = ["black",
                     "black",
                     "black",
@@ -69,7 +83,12 @@ struct Model: Identifiable, Codable, Hashable{
                     "black",
                     "black",
                     "white",
-                    "black"]
-    
+                    "black",
+                    "black",
+                    "black",
+                    "black",
+                    "black",
+                    "black"
+                    ]
 }
 

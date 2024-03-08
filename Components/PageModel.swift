@@ -18,8 +18,6 @@ struct PageModel: View {
         
         VStack{
             
-            //TypeWriterView(finalText: $textOnScreen)
-            
             Text(textOnScreen)
                 .foregroundColor(Color(textColorOnScreen))
                 .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
@@ -28,12 +26,11 @@ struct PageModel: View {
             
             Spacer()
             
-            Image(image)
+            //Image(image)
             
         }.frame(maxWidth: .infinity)
             .background(Color(colorOnScreen))
             .ignoresSafeArea()
-        
     }
 }
 
