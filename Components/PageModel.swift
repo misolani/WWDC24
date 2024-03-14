@@ -13,6 +13,7 @@ struct PageModel: View {
     @Binding var colorOnScreen: String
     @Binding var textColorOnScreen: String
     @Binding var image: String
+    //@Binding var met: [String: Int]
     
     var body: some View {
         
@@ -26,13 +27,33 @@ struct PageModel: View {
             
             Spacer()
             
-            //Image(image)
+            Image(image)
+                
             
         }.frame(maxWidth: .infinity)
             .background(Color(colorOnScreen))
             .ignoresSafeArea()
     }
 }
+
+
+//func spinImage(image: String){
+//    
+//    @State var degreesRotating = 0.0
+//    
+//    var imag: some View{
+//        Image(image)
+//            .rotationEffect(.degrees(degreesRotating))
+//            .onAppear {
+//                withAnimation(.linear(duration: 1)
+//                    .speed(0.05).repeatForever(autoreverses: false)) {
+//                        degreesRotating = 360.0
+//                    }
+//            }
+//            .offset(x: 30, y: -250)
+//    }
+//    
+//}
 
 #Preview {
     PageModel(textOnScreen: .constant(""), colorOnScreen: .constant(""), textColorOnScreen: .constant(""), image: .constant("Page2"))

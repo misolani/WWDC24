@@ -11,9 +11,9 @@ struct TypeWriterView: View {
     
     @State var text: String = ""
     @Binding var finalText: String
-    
+    @State var speedOfLetters: Double
+            
     var body: some View {
-        
         
         VStack(spacing: 16.0) {
             Text(text)
@@ -30,7 +30,7 @@ struct TypeWriterView: View {
             text = ""
         }
         if position < finalText.count {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.05) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + speedOfLetters) {
                 text.append(finalText[position])
                 typeWriter(at: position + 1)
             }
@@ -41,7 +41,7 @@ struct TypeWriterView: View {
 
 struct TypeWriterView_Previews: PreviewProvider {
     static var previews: some View {
-        TypeWriterView(finalText: .constant("oieeeee"))
+        TypeWriterView(finalText: .constant("oieeeee"), speedOfLetters: 0.05)
     }
 }
 
@@ -52,5 +52,5 @@ extension String {
 }
 
 #Preview {
-    TypeWriterView(finalText: .constant("oieeeeee"))
+    TypeWriterView(finalText: .constant("oieeeeee"), speedOfLetters: 0.05)
 }

@@ -55,8 +55,23 @@ struct Model: Identifiable, Codable, Hashable{
                   "Page12",
                   "Page13",
                   "Page14",
-                  "Page15"
-                  ]
+                  "Page15"]
+    
+    var imagesMet: [String: Int] = ["Page1": 0,
+                                    "Page2": 0,
+                                    "Page3": 0,
+                                    "Page4": 0,
+                                    "Page5": 0,
+                                    "Page6": 0,
+                                    "Page7": 0,
+                                    "Page8": 0,
+                                    "Page9": 0,
+                                    "Page10": 0,
+                                    "Page11": 0,
+                                    "Page12": 0,
+                                    "Page13": 0,
+                                    "Page14": 0,
+                                    "Page15": 0]
     
     var colors = ["white",
                   "white",
@@ -72,8 +87,8 @@ struct Model: Identifiable, Codable, Hashable{
                   "blue",
                   "blue",
                   "white",
-                  "blue"
-                  ]
+                  "blue"]
+    
     var txtColor = ["black",
                     "black",
                     "black",
@@ -88,7 +103,8 @@ struct Model: Identifiable, Codable, Hashable{
                     "black",
                     "black",
                     "black",
-                    "black"
-                    ]
+                    "black"]
+    
+    
 }
 
